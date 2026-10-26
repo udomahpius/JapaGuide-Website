@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Your trusted Nigerian guide to visas, international jobs, study abroad and relocation. Understand your options with practical guides and official sources.">
+  <meta name="theme-color" content="#233b36">
+  <title>JapaGuide.ng — Your next chapter starts here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="/images/png/favicon-64.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Manrope', 'sans-serif'] }, colors: { navy: '#233B36', green: '#496D59', lime: '#8EAA83', gold: '#C58A50', mist: '#F1F3ED' }, boxShadow: { soft: '0 12px 40px rgba(35,59,54,.08)' } } } }</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <div class="topline text-white text-xs">
+    <div class="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between gap-3"><span>✦ Practical guidance for your
+        next chapter abroad</span><span class="hidden sm:block">Independent information • Nigerian-focused</span></div>
+  </div>
+  <header
+    class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur border-b border-slate-100 dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="h-[76px] flex items-center justify-between gap-4">
+        <a href="#home" class="brand flex items-center gap-2" aria-label="JapaGuide home"><span
+            class="brandmark">J<span>✦</span></span><span><strong>JapaGuide</span></strong><small>Your trusted guide to
+            moving abroad</small></span></a>
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold"><a href="#countries"
+            class="navlink">Countries</a><a href="#guides" class="navlink">Visa Guides</a><a href="#jobs"
+            class="navlink">Jobs Abroad</a><a href="#study" class="navlink">Study Abroad</a><a href="#tools"
+            class="navlink">Tools</a><a href="#flights" class="navlink">Flights</a><a href="#stories"
+            class="navlink">Blog</a><a href="#about" class="navlink">About Us</a></nav>
+        <div class="flex items-center gap-2"><button id="themeToggle" class="iconbtn" aria-label="Toggle dark mode"
+            title="Toggle theme">☾</button><a href="#newsletter" lass="hidden sm:inline-flex primary-btn !py-3">Get
+            updates <span>↗</span></a><button id="menuToggle" class="iconbtn lg:hidden"
+            aria-label="Open menu">☰</button></div>
+      </div>
+      <nav id="mobileMenu" class="hidden lg:hidden pb-4 grid grid c-cols-2 gap-2 text-sm"><a
+          href="#countries">Countries</a><a href="#guides">Visa guides</a><a href="#jobs">Jobs abroad</a><a
+          href="#study">Study abroad</a><a href="#tools">Tools</a><a href="#flights">Flights</a><a
+          href="#stories">Blog</a><a href="#about">About us</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero-wrap">
+      <div class="mx-auto max-w-7xl px-4 py-8 lg:py-12">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse"></span> VISA · WORK · STUDY · RELOCATE</div>
+            <h1 class="font-display">Your next chapter<br>starts <span class="highlight">abroad.</span></h1>
+            <p class="hero-lede">Big dreams deserve a clear plan. Explore visa pathways, scholarships, international
+              careers and practical relocation guides — made with Nigerians in mind.</p>
+            <div class="hero-perks">
+              <div><i>▤</i><span>Visa<br>requirements</span></div>
+              <div><i>↗</i><span>Application<br>steps</span></div>
+              <div><i>◷</i><span>Costs &<br>timelines</span></div>
+              <div><i>⌂</i><span>Relocation<br>tips</span></div>
+            </div>
+            <form id="heroSearch" class="hero-search"><span class="searchicon">⌕</span><input id="searchInput"
+                type="search" placeholder="Where do you want to go?" aria-label="Search destinations and guides"><button
+                type="submit">Explore <span>→</span></button></form>
+            <div id="searchResults" class="search-results hidden"></div>
+            <div class="popular"><span>Popular destinations</span><a href="#canada">🇨🇦 Canada</a><a href="#uk">🇬🇧
+                UK</a><a href="#portugal">🇵🇹 Portugal</a><a href="#germany">🇩🇪 Germany</a><a href="#usa">🇺🇸
+                USA</a></div>
+            <div class="live-strip"><span class="live-dot"></span><span id="todayDate">Your planning companion, wherever
+                you are</span><span class="live-sep">•</span><span>Built for Nigerians</span></div>
+          </div>
+          <div class="hero-visual"><img src="/images/png/inside-2.jpg"
+              alt="Traveller looking out across a city with travel bag" fetchpriority="high">
+            <div class="image-wash"></div>
+            <div class="floating-note note-top"><span class="note-icon">✈</span>
+              <div><strong>Make your move</strong><small>One informed step at a time</small></div>
+            </div>
+            <div class="floating-note note-bottom">
+              <div class="avatar-stack"><b>✓</b></div>
+              <div><strong>Clear, practical guidance</strong><small>Official links. No false promises.</small></div>
+            </div>
+            <div class="hero-stamp"><span>YOUR</span><strong>FUTURE<br>AWAITS</strong><span>GO WITH A PLAN ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trustbar">
+      <div class="mx-auto max-w-7xl px-4 py-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="trust-item"><span>✓</span>
+          <div><strong>Source-led guidance</strong><small>Links to official resources</small></div>
+        </div>
+        <div class="trust-item"><span>◎</span>
+          <div><strong>Made for Nigerians</strong><small>Context that feels familiar</small></div>
+        </div>
+        <div class="trust-item"><span>↻</span>
+          <div><strong>Review-aware content</strong><small>Dates shown where available</small></div>
+        </div>
+        <div class="trust-item"><span>♧</span>
+          <div><strong>Scam-conscious</strong><small>Know the warning signs</small></div>
+        </div>
+      </div>
+    </section>
+    <section id="countries" class="section-pad">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">FIND YOUR DESTINATION</span>
+            <h2>Explore countries <span>with confidence.</span></h2>
+            <p>Start with a destination, then get familiar with the routes that may fit your goals.</p>
+          </div><a class="text-link" href="#allcountries">View all destinations <b>↗</b></a>
+        </div>
+        <div id="countryGrid" class="country-grid">
+          <article class="country-card" id="canada"><img
+              src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=700&q=80"
+              alt="Toronto skyline">
+            <div class="country-body">
+              <div class="flag">🇨🇦</div>
+              <h3>Canada</h3>
+              <p>Study · Work · Visit</p><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html"
+                target="_blank" rel="noopener">Explore Canada <span>↗</span></a>
+            </div>
+          </article>
+          <article class="country-card" id="uk"><img
+              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=700&q=80"
+              alt="London Westminster and Big Ben">
+            <div class="country-body">
+              <div class="flag">🇬🇧</div>
+              <h3>United Kingdom</h3>
+              <p>Work · Study · Visitor</p><a
+                href="https://www.gov.uk/government/organisations/uk-visas-and-immigration" target="_blank"
+                rel="noopener">Explore UK <span>↗</span></a>
+            </div>
+          </article>
+          <article class="country-card" id="portugal">
+            <img src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&w=700&q=80"
+              alt="Lisbon Portugal rooftops" loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/700x450/e8eef5/263746?text=Portugal';">
+            <div class="country-body">
+              <div class="flag">🇵🇹</div>
+              <h3>Portugal</h3>
+              <p>Work · Residence · Study</p>
+              <a href="https://vistos.mne.gov.pt/en/" target="_blank" rel="noopener noreferrer">
+                Explore Portugal <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="country-card" id="germany">
+            <img src="https://images.unsplash.com/photo-1560930950-5cc20e80e392?auto=format&fit=crop&w=700&q=80"
+              alt="Brandenburg Gate in Berlin" loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/700x450/e8eef5/263746?text=Germany';">
+            <div class="country-body">
+              <div class="flag">🇩🇪</div>
+              <h3>Germany</h3>
+              <p>Work · Study · Opportunity</p>
+              <a href="https://www.make-it-in-germany.com/en/" target="_blank" rel="noopener noreferrer">
+                Explore Germany <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="country-card" id="usa"><img
+              src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=700&q=80"
+              alt="New York City skyline">
+            <div class="country-body">
+              <div class="flag">🇺🇸</div>
+              <h3>United States</h3>
+              <p>Visit · Study · Work</p><a href="https://travel.state.gov/content/travel/en/us-visas.html"
+                target="_blank" rel="noopener">Explore USA <span>↗</span></a>
+            </div>
+          </article>
+          <article class="country-card more-card" id="allcountries">
+            <div class="more-art"><span>🌐</span><small>THE WORLD IS OPEN</small></div>
+            <div class="country-body">
+              <div class="flag">✦</div>
+              <h3>More destinations</h3>
+              <p>Discover other countries and routes</p><a href="#contact">Request a country <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="flights" class="flight-section  section-pad">
+      <div class="mx-auto max-w-7xl px-4 your-section-class">
+        <div class="section-head  px-4 ">
+          <div><span class="section-kicker">LIVE FARE DISCOVERY</span>
+            <h2>Find your next flight <span>for less.</span></h2>
+            <p>Explore current offers returned by airlines through our flight-search provider. Prices can change until
+              ticketing.</p>
+          </div><span class="live-api-pill"><i></i> API-powered fares</span>
+        </div>
+        <div class="flight-carousel-shell">
+          <div class="flight-carousel-top">
+            <div><strong>Routes people are exploring</strong><small>Live searches · fares vary by date and
+                availability</small></div>
+            <div class="carousel-controls"><button type="button" id="dealPrev"
+                aria-label="Previous flight deals">←</button><button type="button" id="dealNext"
+                aria-label="Next flight deals">→</button></div>
+          </div>
+          <div id="flightDeals" class="flight-deals" aria-live="polite">
+            <div class="flight-loading"><span class="spinner"></span><span>Checking current airline offers…</span></div>
+          </div>
+          <p id="dealsStatus" class="flight-disclaimer">Live fares load from the connected flight provider. No sample or
+            estimated fares are presented as real prices.</p>
+        </div>
+        <div class="flight-search-panel" id="flightSearchPanel">
+          <div class="flight-search-heading">
+            <div><span class="section-kicker light">YOUR JOURNEY, YOUR WAY</span>
+              <h3>Search and compare flights</h3>
+              <p>Search by city or airport worldwide, then narrow results by airline and cabin.</p>
+            </div><span class="search-plane">✈</span>
+          </div>
+          <form id="flightSearchForm" class="flight-form">
+            <div class="trip-type-row"><label><input type="radio" name="tripType" value="return" checked>
+                Return</label><label><input type="radio" name="tripType" value="oneway"> One way</label></div>
+            <div class="flight-form-grid">
+              <div class="flight-locations">
+                <div class="flight-field location-field"><label for="flightOrigin">From</label>
+                  <div class="location-input"><span>⌖</span><input id="flightOrigin" name="origin" autocomplete="off"
+                      placeholder="City, airport or state/region" value="Lagos" required><input type="hidden"
+                      id="originCode">
+                    <div id="originSuggestions" class="place-suggestions hidden"></div>
+                  </div><small>Select a suggested city/airport for an accurate route.</small>
+                </div>
+                <button type="button" class="swap-locations" id="swapLocations"
+                  aria-label="Swap origin and destination">⇄</button>
+                <div class="flight-field location-field"><label for="flightDestination">To</label>
+                  <div class="location-input"><span>⌖</span><input id="flightDestination" name="destination"
+                      autocomplete="off" placeholder="Where are you going?" required><input type="hidden"
+                      id="destinationCode">
+                    <div id="destinationSuggestions" class="place-suggestions hidden"></div>
+                  </div><small>International and domestic destinations.</small>
+                </div>
+              </div>
+              <div class="flight-field"><label for="flightDepart">Departure</label><input id="flightDepart" type="date"
+                  required></div>
+              <div class="flight-field return-date-field"><label for="flightReturn">Return</label><input
+                  id="flightReturn" type="date"></div>
+              <div class="flight-field"><label for="flightAdults">Passengers</label><select id="flightAdults">
+                  <option value="1">1 adult</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+                  <option value="5">5 adults</option>
+                  <option value="6">6 adults</option>
+                  <option value="7">7 adults</option>
+                  <option value="8">8 adults</option>
+                  <option value="9">9 adults</option>
+                </select></div>
+              <div class="flight-field"><label for="flightCabin">Cabin class</label><select id="flightCabin">
+                  <option value="economy">Economy</option>
+                  <option value="premium_economy">Premium economy</option>
+                  <option value="business">Business</option>
+                  <option value="first">First class</option>
+                </select></div>
+              <div class="flight-field"><label for="flightAirline">Preferred airline</label><input id="flightAirline"
+                  placeholder="Any airline (or e.g. Emirates)" autocomplete="off"><small>Optional; results are filtered
+                  when the provider returns matching carrier details.</small></div>
+              <div class="flight-field"><label for="flightCurrency">Display currency</label><select id="flightCurrency">
+                  <option value="USD">USD · US dollar</option>
+                  <option value="NGN">NGN · Nigerian naira</option>
+                  <option value="GBP">GBP · British pound</option>
+                  <option value="EUR">EUR · Euro</option>
+                  <option value="CAD">CAD · Canadian dollar</option>
+                </select></div>
+            </div>
+            <div class="flight-form-bottom">
+              <p><span>🔒</span> Your API credentials stay on the server. Search fares are not tickets until booked.</p>
+              <button class="flight-submit" type="submit" id="flightSearchButton">Search available flights
+                <span>→</span></button>
+            </div>
+          </form>
+          <div id="flightSearchMessage" class="flight-search-message" role="status"></div>
+          <div id="flightResults" class="flight-results" aria-live="polite"></div>
+        </div>
+        <div class="flight-bottom-note"><span>ⓘ</span>
+          <p><strong>About prices:</strong> fares come from the connected provider's current search response and can
+            change before purchase. Airline coverage depends on provider agreements, route, travel date and
+            availability. State/region searches should resolve to a suggested city or airport before searching.</p>
+        </div>
+      </div>
+    </section>
+    <section id="guides" class="section-pad section-soft">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">YOUR NEXT STEP, EXPLAINED</span>
+            <h2>Guides that make the <span>complex clearer.</span></h2>
+            <p>Understand the process before you commit time or money.</p>
+          </div><a class="text-link" href="#stories">Browse all guides <b>↗</b></a>
+        </div>
+        <div class="content-layout">
+          <div class="article-grid">
+            <article class="article-card">
+              <div class="article-img"><img
+                  src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80"
+                  alt="Toronto skyline"><span class="category-pill">CANADA</span></div>
+              <div class="article-body">
+                <div class="article-meta"><span>VISA GUIDE</span><span>6 min read</span></div>
+                <h3>Canada visa pathways: what Nigerian applicants should check first</h3>
+                <p>Learn how to identify the right route, prepare supporting documents and confirm requirements at the
+                  official source.</p>
+                <div class="article-foot"><span>↻ Review official guidance before applying</span><a
+                    href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" rel="noopener"
+                    aria-label="Read official Canada guidance">↗</a></div>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-img"><img
+                  src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=900&q=80"
+                  alt="London skyline"><span class="category-pill blue">UNITED KINGDOM</span></div>
+              <div class="article-body">
+                <div class="article-meta"><span>STUDY ABROAD</span><span>7 min read</span></div>
+                <h3>Planning to study in the UK: a practical starting checklist</h3>
+                <p>Compare course options, understand your school's process and keep track of costs and deadlines.</p>
+                <div class="article-foot"><span>Official source links included</span><a
+                    href="https://www.gov.uk/student-visa" target="_blank" rel="noopener"
+                    aria-label="Read official UK student visa guidance">↗</a></div>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-img"><img
+                  src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80"
+                  alt="European city rooftops"><span class="category-pill gold">RELOCATION</span></div>
+              <div class="article-body">
+                <div class="article-meta"><span>PLAN YOUR MOVE</span><span>5 min read</span></div>
+                <h3>Build a realistic relocation budget before you move</h3>
+                <p>Think beyond flights: accommodation deposits, transport, documents, insurance and an emergency
+                  buffer.</p>
+                <div class="article-foot"><span>Planning estimate, not a quote</span><a href="#tools"
+                    aria-label="Open cost calculator">↗</a></div>
+              </div>
+            </article>
+          </div>
+          <aside class="quick-panel">
+            <div class="panel-head"><span class="panel-icon">✦</span>
+              <div>
+                <h3>Quick tools</h3>
+                <p>Make your next step more practical.</p>
+              </div>
+            </div><a href="#checklist" class="tool-row"><span>▤</span>
+              <div><strong>Visa checklist</strong><small>Organise the documents you may need</small></div><b>→</b>
+            </a><a href="#costTool" class="tool-row"><span>▦</span>
+              <div><strong>Cost calculator</strong><small>Build a personal planning estimate</small></div><b>→</b>
+            </a><a href="#processing" class="tool-row"><span>◷</span>
+              <div><strong>Processing-time guide</strong><small>Find official timelines</small></div><b>→</b>
+            </a><a href="#resources" class="tool-row"><span>⇩</span>
+              <div><strong>Planning resources</strong><small>Use our printable starter checklist</small></div><b>→</b>
+            </a>
+            <div class="panel-note">We help you prepare — we do not sell visas or guarantee outcomes.</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section id="tools" class="section-pad">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">PLAN SMARTER</span>
+            <h2>Useful tools for the <span>real-world details.</span></h2>
+            <p>Simple planning helpers, with assumptions clearly explained.</p>
+          </div>
+        </div>
+        <div class="tools-grid">
+          <div id="costTool" class="tool-card cost-card">
+            <div class="tool-title"><span class="tool-symbol">₦</span>
+              <div>
+                <h3>Relocation cost planner</h3>
+                <p>Build an estimate in your chosen currency.</p>
+              </div>
+            </div><label for="currency">Display currency</label><select id="currency">
+              <option value="NGN">NGN — Nigerian naira</option>
+              <option value="USD">USD — US dollar</option>
+              <option value="GBP">GBP — British pound</option>
+              <option value="EUR">EUR — Euro</option>
+              <option value="CAD">CAD — Canadian dollar</option>
+            </select>
+            <div class="cost-fields"><label>Application & documents<input id="docsCost" type="number" min="0"
+                  value="250000"></label><label>Flight budget<input id="flightCost" type="number" min="0"
+                  value="900000"></label><label>First month housing<input id="housingCost" type="number" min="0"
+                  value="600000"></label><label>Living & local travel<input id="livingCost" type="number" min="0"
+                  value="350000"></label></div>
+            <div class="estimate-result">
+              <div><small>Estimated total</small><strong id="estimateTotal">₦2,100,000</strong></div><span
+                class="estimate-tag">Your estimate</span>
+            </div>
+            <p class="fineprint">Planning only. Figures are examples you can edit, not official fees or quotes. Confirm
+              costs with providers.</p>
+          </div>
+          <div id="currencyTool" class="tool-card fx-card">
+            <div class="tool-title"><span class="tool-symbol">↗</span>
+              <div>
+                <h3>Currency reference</h3>
+                <p>Daily reference rates, fetched from a public API.</p>
+              </div><span class="api-live"><i></i> API</span>
+            </div>
+            <div class="fx-row"><label for="fxAmount">Amount</label><input id="fxAmount" type="number" value="100"
+                min="0"></div>
+            <div class="fx-pair"><select id="fxFrom" aria-label="From currency">
+                <option>USD</option>
+                <option selected>NGN</option>
+                <option>GBP</option>
+                <option>EUR</option>
+                <option>CAD</option>
+              </select><span>⇄</span><select id="fxTo" aria-label="To currency">
+                <option>USD</option>
+                <option>NGN</option>
+                <option selected>GBP</option>
+                <option>EUR</option>
+                <option>CAD</option>
+              </select></div>
+            <div class="fx-output"><small>Approximate converted amount</small><strong id="fxResult">Fetching latest
+                rate…</strong>
+              <p id="fxDate">Connecting to exchange-rate service</p>
+            </div><button id="convertBtn" class="secondary-btn">Refresh rate ↻</button>
+            <p class="fineprint">Reference rates are not bank, card, cash-exchange or live trading quotes. NGN coverage
+              may not be available from this provider; the tool will show an honest error if a pair is unsupported.</p>
+            <div id="fxStatus" class="status-line" role="status"></div>
+          </div>
+          <div id="checklist" class="tool-card checklist-card">
+            <div class="tool-title"><span class="tool-symbol">✓</span>
+              <div>
+                <h3>Visa preparation checklist</h3>
+                <p>Tick off your general preparation tasks.</p>
+              </div>
+            </div>
+            <div id="checkItems" class="check-items"><label><input type="checkbox"> Confirm the correct visa route on an
+                official website</label><label><input type="checkbox"> Check passport validity and document
+                rules</label><label><input type="checkbox"> Review funds, fees and evidence
+                requirements</label><label><input type="checkbox"> Gather school, employer or invitation
+                documents</label><label><input type="checkbox"> Check appointment and processing
+                information</label><label><input type="checkbox"> Keep copies and verify submission instructions</label>
+            </div>
+            <div class="progress-line"><span id="checkProgress"></span></div>
+            <div class="check-footer"><small id="checkCount">0 of 6 complete</small><button
+                id="resetChecks">Reset</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="processing" class="process-section">
+      <div class="mx-auto max-w-7xl px-4 py-12">
+        <div class="process-copy"><span class="section-kicker light">KNOW BEFORE YOU GO</span>
+          <h2>Timelines change.<br><span>Verify before you plan.</span></h2>
+          <p>Visa processing depends on the destination, application type, personal circumstances and current demand.
+            Use official processing-time tools instead of relying on promises or social media screenshots.</p><a
+            class="gold-btn"
+            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html"
+            target="_blank" rel="noopener">Check an official timeline ↗</a>
+        </div>
+        <div class="timeline-cards"><a href="https://www.gov.uk/visa-processing-times" target="_blank"
+            rel="noopener"><span>🇬🇧</span><strong>UK</strong><small>Official visa processing
+              times</small><b>↗</b></a><a
+            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html"
+            target="_blank" rel="noopener"><span>🇨🇦</span><strong>Canada</strong><small>Check current processing
+              estimates</small><b>↗</b></a><a href="https://travel.state.gov/content/travel/en/us-visas.html"
+            target="_blank" rel="noopener"><span>🇺🇸</span><strong>United States</strong><small>Visa categories and
+              consular guidance</small><b>↗</b></a></div>
+      </div>
+    </section>
+    <section id="jobs" class="section-pad">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">WORK OPPORTUNITIES</span>
+            <h2>Explore work abroad — <span>carefully.</span></h2>
+            <p>Use trusted employer and government resources. Always confirm eligibility and never pay someone for a job
+              offer.</p>
+          </div><a href="https://www.make-it-in-germany.com/en/working-in-germany/job-listings" target="_blank"
+            rel="noopener" class="text-link">Official job listings <b>↗</b></a>
+        </div>
+        <div class="opportunity-grid"><a class="opportunity-card"
+            href="https://www.make-it-in-germany.com/en/working-in-germany/job-listings" target="_blank"
+            rel="noopener"><span class="opp-flag">🇩🇪</span>
+            <div><span class="opp-label">OFFICIAL RESOURCE</span>
+              <h3>Germany job listings</h3>
+              <p>Explore routes and job-search resources for skilled workers.</p>
+            </div><b>↗</b>
+          </a><a class="opportunity-card" href="https://www.gov.uk/find-a-job" target="_blank" rel="noopener"><span
+              class="opp-flag">🇬🇧</span>
+            <div><span class="opp-label">GOVERNMENT SERVICE</span>
+              <h3>Find a job in the UK</h3>
+              <p>Search the UK government’s job service and verify sponsorship separately.</p>
+            </div><b>↗</b>
+          </a><a class="opportunity-card" href="https://www.jobbank.gc.ca/" target="_blank" rel="noopener"><span
+              class="opp-flag">🇨🇦</span>
+            <div><span class="opp-label">OFFICIAL RESOURCE</span>
+              <h3>Canada Job Bank</h3>
+              <p>Research employers, occupations and Canadian labour-market information.</p>
+            </div><b>↗</b>
+          </a></div>
+        <div class="scam-warning"><span>⚠</span>
+          <div><strong>Scam alert: no legitimate job offer should require you to pay the employer for the job.</strong>
+            <p>Verify recruiter identity, employer domains, work authorisation and every request for money. Be cautious
+              with guaranteed visas, unrealistic salaries and pressure to act quickly.</p>
+          </div><a href="#scams">Safety tips ↗</a>
+        </div>
+      </div>
+    </section>
+    <section id="study" class="section-pad section-soft">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">STUDY ABROAD</span>
+            <h2>Turn your ambition into <span>a study plan.</span></h2>
+            <p>Start with course fit, admission criteria, funding and the official student visa route.</p>
+          </div>
+        </div>
+        <div class="study-grid">
+          <div class="study-feature"><img src="./images/png/post-square-1080.png"
+              alt="University students walking across campus" loading="lazy">
+            <div class="study-overlay"><span>YOUR EDUCATION JOURNEY</span>
+              <h3>Choose a course that moves you forward.</h3>
+              <p>Check entry requirements, total cost and funding before paying an application fee.</p>
+            </div>
+          </div>
+          <div class="study-links"><a href="https://www.chevening.org/scholarships/" target="_blank"
+              rel="noopener"><span>🎓</span>
+              <div><strong>Chevening Scholarships</strong><small>UK postgraduate scholarship information</small></div>
+              <b>↗</b>
+            </a><a href="https://educationusa.state.gov/" target="_blank" rel="noopener"><span>🇺🇸</span>
+              <div><strong>EducationUSA</strong><small>Official US study advising network</small></div><b>↗</b>
+            </a><a href="https://www.daad.de/en/" target="_blank" rel="noopener"><span>🇩🇪</span>
+              <div><strong>DAAD</strong><small>Study and scholarship information for Germany</small></div><b>↗</b>
+            </a><a href="https://www.ukcisa.org.uk/" target="_blank" rel="noopener"><span>📚</span>
+              <div><strong>UKCISA</strong><small>Guidance for international students in the UK</small></div><b>↗</b>
+            </a></div>
+        </div>
+      </div>
+    </section>
+    <section id="stories" class="section-pad">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="section-head">
+          <div><span class="section-kicker">THE JAPA GUIDE JOURNAL</span>
+            <h2>Better information. <span>Brighter futures.</span></h2>
+            <p>Practical topics to research as you prepare for a move.</p>
+          </div>
+        </div>
+        <div class="journal-grid">
+          <article><span class="journal-number">01 / PREPARE</span>
+            <h3>Documents to organise before starting a visa application</h3>
+            <p>Build a checklist around the exact route and official document instructions.</p><a
+              href="#checklist">Start your checklist ↗</a>
+          </article>
+          <article><span class="journal-number">02 / BUDGET</span>
+            <h3>How to think about the full cost of moving abroad</h3>
+            <p>Plan for one-off costs, recurring expenses, and an emergency reserve.</p><a href="#costTool">Build your
+              estimate ↗</a>
+          </article>
+          <article><span class="journal-number">03 / STAY SAFE</span>
+            <h3>How to spot suspicious visa and recruitment offers</h3>
+            <p>Check identities, domains, official sources and unusual payment requests.</p><a href="#scams">Read safety
+              tips ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="scams" class="section-pad scam-section">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="scam-inner">
+          <div class="scam-icon">⚑</div>
+          <div><span class="section-kicker light">YOUR SAFETY MATTERS</span>
+            <h2>Exciting opportunity?<br><span>Verify it first.</span></h2>
+            <p>JapaGuide does not guarantee visas, employment or scholarships. Be cautious of anyone promising
+              guaranteed approval, selling fake appointments, or asking you to pay for a job offer.</p><a
+              href="https://www.gov.uk/government/organisations/uk-visas-and-immigration" target="_blank"
+              rel="noopener">Verify through official channels ↗</a>
+          </div>
+          <div class="safety-points">
+            <p>✓ Verify official website domains</p>
+            <p>✓ Read eligibility and fee rules yourself</p>
+            <p>✓ Keep payment receipts and written records</p>
+            <p>✓ Report suspicious requests</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="newsletter-section">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="newsletter-box">
+          <div class="newsletter-copy"><span class="section-kicker light">THE SMARTER MOVE STARTS HERE</span>
+            <h2>Useful updates.<br><span>No unnecessary noise.</span></h2>
+            <p>Get practical visa, study, work and relocation resources in your inbox.</p>
+          </div>
+          <form id="newsletterForm" class="newsletter-form"><label for="emailInput">Email address</label>
+            <div class="email-row"><input id="emailInput" type="email" placeholder="jappaguideng@gmail.com"
+                required><button type="submit">Get updates ↗</button></div><label class="consent"><input
+                id="emailConsent" type="checkbox" required> I agree to receive JapaGuide updates and have read the <a
+                href="#privacy">privacy notice</a>.</label>
+            <p id="newsletterMessage" role="status">You can unsubscribe at any time. Connect an email service to enable
+              live subscriptions.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-pad">
+      <div class="mx-auto max-w-7xl px-4 about-grid">
+        <div><span class="section-kicker">ABOUT JAPAGUIDE.NG</span>
+          <h2>Clear guidance for <span>big decisions.</span></h2>
+        </div>
+        <div>
+          <p>JapaGuide.ng is an independent, Nigeria-focused information platform designed to help people research
+            travel, study, work and relocation options. We make complex topics easier to navigate and point readers
+            toward official sources for decisions that matter.</p>
+          <p class="about-bold">We inform. You verify. Your journey is your own.</p>
+          <div class="about-tags"><span>Plain
+              English</span><span>Source-led</span><span>Scam-conscious</span><span>Built for mobile</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="footer">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="footer-main">
+        <div class="footer-brand"><a href="#home" class="brand brand-light"><span
+              class="brandmark">J<span>✦</span></span><span><strong>JapaGuide<span>.ng</span></strong><small>Your
+                trusted guide to moving abroad</small></span></a>
+          <p>Helping Nigerians explore the world with better information, practical tools and trusted official links.
+          </p><a class="footer-email" href="mailto:hello@japaguide.ng">hello@japaguide.ng ↗</a>
+        </div>
+        <div>
+          <h4>Explore</h4><a href="#countries">Countries</a><a href="#guides">Visa guides</a><a href="#jobs">Jobs
+            abroad</a><a href="#study">Study abroad</a><a href="#tools">Planning tools</a>
+        </div>
+        <div>
+          <h4>Popular destinations</h4><a href="#canada">🇨🇦 Canada</a><a href="#uk">🇬🇧 United Kingdom</a><a
+            href="#portugal">🇵🇹 Portugal</a><a href="#germany">🇩🇪 Germany</a><a href="#usa">🇺🇸 United States</a>
+        </div>
+        <div>
+          <h4>Trust & policies</h4><a href="#editorial">Editorial policy</a><a href="#privacy">Privacy notice</a><a
+            href="#terms">Terms of use</a><a href="#affiliate">Affiliate disclosure</a><a href="#scams">Scam alerts</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer"><strong>Important information</strong>
+        <p>JapaGuide.ng is an independent information service, not a government website, immigration authority, law firm
+          or recruitment agency. Content is general guidance, not legal advice. Rules, fees, eligibility and processing
+          times change; always verify details with the relevant official authority. No visa, job or scholarship outcome
+          is guaranteed.</p>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> JapaGuide.ng. All rights reserved.</span><span>Better
+          information. Brighter futures. <b>✦</b></span></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float"
+    href="https://wa.me/?text=Hello%20JapaGuide.ng%2C%20I%20would%20like%20information%20about%20moving%20abroad."
+    target="_blank" rel="noopener" aria-label="Contact JapaGuide on WhatsApp"><span>☏</span><b>Chat with us</b></a>
+  <div id="toast" role="status" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
