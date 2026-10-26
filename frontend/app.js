@@ -180,6 +180,7 @@ $("#newsletterForm").addEventListener("submit", (e) => {
 
 // Flight search: all fare and place data is requested from the server-side Duffel integration.
 const flightApi = "https://japa-guide-website.vercel.app/api";
+// const flightApi = "http://localhost:3000/api";
 // const flightApi = "/api";
 const dealContainer = document.querySelector("#flightDeals");
 const dealsStatus = document.querySelector("#dealsStatus");
