@@ -5,12 +5,15 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 dotenv.config();
 const app = express();
+const allowedOrigins = [
+  "http://localhost:5500",
+  "http://127.0.0.1:5500",
+  process.env.FRONTEND_ORIGIN,
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: [
-      "http://127.0.0.1:5500",
-      "http://localhost:5500",
-    ],
+    origin: allowedOrigins,
   }),
 );
 // app.use(cors({ origin: process.env.FRONTEND_ORIGIN || true }));

@@ -179,7 +179,7 @@ $("#newsletterForm").addEventListener("submit", (e) => {
 // Keep outbound official-source links clearly separated from editorial claims. Forms require a production backend before collecting data.
 
 // Flight search: all fare and place data is requested from the server-side Duffel integration.
-const flightApi = "http://localhost:3000/api";
+const flightApi = "https://japa-guide-website.vercel.app/api";
 // const flightApi = "/api";
 const dealContainer = document.querySelector("#flightDeals");
 const dealsStatus = document.querySelector("#dealsStatus");
