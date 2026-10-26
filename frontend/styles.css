@@ -18,6 +18,41 @@
 @media(max-width:1000px){.flight-form-grid{grid-template-columns:1fr 34px 1fr 1fr}.flight-form-grid .flight-field:nth-child(4){grid-column:1/3}.flight-form-grid .flight-field:nth-child(5){grid-column:3/5}.flight-form-grid .flight-field:nth-child(6){grid-column:1/2}.flight-form-grid .flight-field:nth-child(7){grid-column:2/3}.flight-form-grid .flight-field:nth-child(8){grid-column:3/5}.flight-form-grid .flight-field:nth-child(9){grid-column:1/3}.flight-form-grid .flight-field:nth-child(10){grid-column:3/5}.flight-result{grid-template-columns:1fr 1fr auto}}
 @media(max-width:650px){.flight-section .section-head{align-items:flex-start}.live-api-pill{font-size:9px}.flight-carousel-shell{padding:15px}.flight-deals{grid-auto-columns:minmax(235px,82%)}.flight-search-panel{padding:20px 15px}.flight-search-heading h3{font-size:23px}.flight-search-heading p{font-size:10px}.search-plane{width:42px;height:42px}.flight-form-grid{grid-template-columns:1fr 1fr;gap:12px}.flight-form-grid .location-field:first-child{grid-column:1/-1}.flight-form-grid .swap-locations{grid-column:1/-1;grid-row:2;width:100%;height:28px;margin:0;transform:rotate(90deg)}.flight-form-grid .location-field:nth-child(3){grid-column:1/-1}.flight-form-grid .flight-field:nth-child(4),.flight-form-grid .flight-field:nth-child(5),.flight-form-grid .flight-field:nth-child(6),.flight-form-grid .flight-field:nth-child(7),.flight-form-grid .flight-field:nth-child(8),.flight-form-grid .flight-field:nth-child(9),.flight-form-grid .flight-field:nth-child(10){grid-column:auto}.flight-form-grid .flight-field:nth-child(10){grid-column:1/-1}.flight-form-bottom{align-items:stretch;flex-direction:column}.flight-submit{width:100%}.flight-result{grid-template-columns:1fr auto;gap:10px}.result-times{grid-column:1/-1;grid-row:2}.result-price{grid-column:2;grid-row:1/3}.flight-bottom-note p{font-size:9px}.flight-carousel-top strong{font-size:12px}.flight-carousel-top small{max-width:220px;line-height:1.5}}
 
+
+/* FIX: Mobile flight carousel */
+@media (max-width: 650px) {
+  .flight-carousel-shell {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #flightDeals.flight-deals {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    padding: 4px 2px 14px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  #flightDeals .flight-deal-card {
+    flex: 0 0 85% !important;
+    width: 85% !important;
+    min-width: 85% !important;
+    max-width: 85% !important;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+  }
+}
+
 /* Final flight form grid alignment */
 .flight-form-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 .flight-locations{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:12px;align-items:end}
@@ -79,6 +114,8 @@ body{background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased
 .motion-ready .scroll-reveal:nth-child(4){transition-delay:.19s}
 @media(hover:hover){.navlink{position:relative}.navlink:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:#8eaa83;transition:right .22s ease}.navlink:hover:after{right:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.motion-ready .scroll-reveal{opacity:1;transform:none}}
+
+
 
 
 /* Aircraft section background */
